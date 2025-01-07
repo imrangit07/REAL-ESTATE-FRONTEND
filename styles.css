@@ -1,0 +1,219 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #090611, #090611, #150c2d, #20104d, #3a0fa8);
+    overflow: hidden;
+}
+
+.hero .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: yellow; */
+    padding: 20px 0px 20px 40px;
+}
+
+.hero .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+}
+
+.hero .navbar ul li a {
+    text-decoration: none;
+    color: lightcyan;
+}
+
+.hero .navbar i {
+    letter-spacing: 3px;
+    color: lightcyan;
+}
+
+.navbar-right-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-right: 20px;
+}
+
+.navbar-right-section button {
+    background: linear-gradient(90deg, #7c01ff, #015dfe);
+
+    padding: 8px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    color: white;
+    border: none;
+}
+
+.hero-containt {
+    width: 100%;
+    display: flex;
+}
+
+/* .hero-left-section */
+
+.hero .hero-left-section {
+    width: 50%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: start;
+    padding-left: 40px;
+    padding-top: 100px;
+    /* overflow-y: hidden; */
+    /* background-color: aqua; */
+}
+
+.hero .hero-left-section .content h1 {
+    font-size: 75px;
+    color: #fff;
+}
+
+.hero .hero-left-section .content h1 span {
+    color: #7c01ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero .hero-left-section .content p{
+    width: 80%;
+    color: white;
+    line-height: 1.3em;
+    margin-top: 1em;
+    margin-bottom:3em ;
+}
+.hero .hero-left-section .content .btn{
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 3em;
+    font-weight: 500;
+    background: linear-gradient(90deg, #7c01ff, #015dfe);
+}
+.hero .hero-left-section .content{
+    position: relative;
+    height: 100%;
+    /* background-color: white; */
+}
+.hero .hero-left-section .content .circle1,.circle2,.circle3{
+    background: linear-gradient(180deg, #7c01ff, #015dfe);
+    /* background-image: radial-gradient(
+        circle,
+        #7c01ff, #015dfe
+      ); */
+    box-shadow: 0px 0px 5px 4px #3a0fa8;
+    border-radius: 50%;
+}
+.hero .hero-left-section .content .circle1{
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 60%;
+    left: 85%;
+}
+.hero .hero-left-section .content .circle2{
+    width: 1.8em;
+    height: 1.8em;
+    position: absolute;
+    top: 78%;
+    left: 72%;
+}
+.hero .hero-left-section .content .circle3{
+    width: 1.8em;
+    height: 1.8em;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+}
+
+.hero .hero-left-section .ellipse1 {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    background: linear-gradient(90deg, #4a12d6, #7c01ff, #015dfe);
+    clip-path: ellipse(46% 25% at 10% 100%);
+}
+.hero .hero-left-section .ellipse1 .ellipse2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    background: linear-gradient(90deg, #4f77fb, #015dfe, #7c01ff);
+    clip-path: ellipse(48% 25% at 10% 100%);
+}
+.hero .hero-left-section .ellipse1 .ellipse2 .ellipse3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -25px;
+    left: 0px;
+   background-color: #090611;
+    clip-path: ellipse(52% 24% at 10% 100%);
+}
+
+
+
+
+
+
+
+
+
+.hero .hero-right-section {
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* background-color: white; */
+    overflow: hidden;
+}
+
+.hero .hero-right-section .first {
+    width: 88%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: linear-gradient(90deg, #4a12d6, #7c01ff, #015dfe);
+    clip-path: ellipse(99% 99% at 99% 99%);
+}
+
+.hero .hero-right-section .second {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: linear-gradient(90deg, #4f77fb, #015dfe, #7c01ff);
+    clip-path: ellipse(94% 98% at 99% 99%);
+}
+
+.hero .hero-right-section .image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    background-color: red;
+    justify-content: left;
+    clip-path: ellipse(88% 98% at 99% 99%);
+}
