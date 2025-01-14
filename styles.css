@@ -244,7 +244,7 @@ p {
     
 }
 
-.featured .featured-title h3 {
+.featured .featured-title h3,.cities .citie1 h3 {
     font-size: 25px;
     padding-left: 50px;
     color: #4d20ff;
@@ -254,7 +254,7 @@ p {
 
 }
 
-.featured .featured-title h1 {
+.featured .featured-title h1,.cities .citie1 h1 {
     font-size: 40px;
     margin-top: 10px;
     letter-spacing: 3px;
@@ -288,10 +288,26 @@ p {
     margin: 30px 0px;
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
     
 }
-
+.featured .all-featured .all-featured-button{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin:30px auto 0px auto;
+}
+.featured .all-featured .all-featured-button .btn{
+    padding: 10px 30px 10px 40px;
+    margin-left: 60px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #7c01ff, #015dfe);
+    
+}
+.featured .all-featured .all-featured-button .btn i{
+    padding-left: 20px;
+}
 .featured .all-featured .featur {
     border: 1px solid grey;
     box-shadow: 0px 0px 10px 1px grey;
@@ -385,12 +401,7 @@ p {
     border-radius: 50%;
     
 }
-/* .featured .all-featured .featured-price .icon-imgae img{
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    
-} */
+
 .featured .all-featured .featured-price .f-price{
     display: flex;
     align-items: center;
@@ -411,4 +422,70 @@ p {
 
 .featured .all-featured .featured-price .f-price span{
     font-weight: 700;
+}
+
+
+
+
+
+/* THIS IS FOR CITIES */
+
+.cities{
+    display: grid;
+    grid-template-columns:repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+    /* background-color: yellow; */
+    height: auto;
+    padding:10px 40px;
+    gap: 20px;
+    
+}
+.cities .citie1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    padding: 30px;
+   
+}
+.cities .ellipsis{
+    grid-column-start:1;
+    grid-column-end: 4;
+    font-size: 40px;
+    color: #015dfe;
+    text-align: center;
+    }
+
+.cities .citie2{
+    
+    background-image: url(images/citie1.avif);
+}
+.cities .citie3{
+    background-image: url(images/citie2.avif);
+
+}
+.cities .citie4{
+    background-image: url(images/citie3.avif);
+}
+.cities .citie{
+    height: 80vh;
+    background-size: cover;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 2px grey;
+}
+.cities .citie .cities-details{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width:95%;
+    border-radius: 10px;
+    background-color: white;
+
+}
+.cities .citie .citie-arrow-icon{
+ margin: auto 0;
+ color: #015dfe;
 }
