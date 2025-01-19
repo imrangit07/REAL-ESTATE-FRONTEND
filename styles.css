@@ -38,7 +38,25 @@ body {
 .hero .navbar ul li a {
     text-decoration: none;
     color: lightcyan;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -0.2rem;
+        left: 0;
+        width: 0%;
+        border-bottom: .2rem solid #015dfe;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+
+        transition: all 0.5s linear;
+    }
 }
+.hero .navbar ul li a:hover::after{
+    width: 100%;
+}
+
 
 .hero .navbar i {
     letter-spacing: 3px;
@@ -65,19 +83,37 @@ body {
     color: white;
 }
 
+
 .navbar .nav-login-btn {
     border: 2px solid #015efe89;
+    /* background-color: red; */
 }
+.navbar .nav-btns:hover{
+    transition: all .5s linear;
+    
+    }
+.navbar .nav-btns:hover{
+scale: 1.1;
+}
+
 
 .navbar .nav-add-btn {
     background: linear-gradient(90deg, #7c01ff, #015dfe);
-
-    border: none;
+    border: none;  
+    transition: all .5s linear;
 }
+.navbar .nav-add-btn:hover{
+    scale: 1.1;
+}
+
 
 .navbar-right-section .nav-btns {
     padding: 0px 10px 0px 40px;
+    
 }
+
+
+
 
 
 
