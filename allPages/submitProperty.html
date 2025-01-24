@@ -6,84 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Property</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-        <link rel="stylesheet" href="../styles.css">
-        
-    </head>
-    
-        
-        <body class="singin__body">
-        <nav class="navbar">
-            <i class="fa-solid fa-house"> REAL ESTATE</i>
-            <div class="navbar-right-section">
-                <ul>
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">SERVICES</a></li>
-                    <li><a href="">CONTACT US</a></li>
-                </ul>
-                <div class="nav-btns">
-                    <a href="signin.html"  class="nav-login-btn navbar-btns"><i class="fa-solid fa-user"></i>
-                        Sign in</a>
-                </div>
-                
-                <a href="allPages/submitProperty.html"  class="nav-add-btn navbar-btns"><i class="fa-solid fa-copy"></i>
-                    Submit Propeerty</a>
-                    
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+
+<body class="all__body">
+    <input type="checkbox" class="check-input" id="click">
+    <nav class="navbar">
+        <a href="/"> <i class="fa-solid fa-house"> KEYSPACE</i></a>
+        <div class="navbar-right-section">
+            <label for="click" class="navbar-bars">
+                <i class="fa-solid fa-bars ">
+                </i></label>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="property.html">PROPERTYS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="nav-btns">
+                <a href="signin.html" class="nav-login-btn navbar-btns"><i class="fa-solid fa-user"></i>
+                    Sign in</a>
             </div>
-            </div>
-        </nav>
+
+            <a href="submitProperty.html" target="_blank" class="nav-add-btn navbar-btns"><i
+                    class="fa-solid fa-copy"></i>
+                Submit Propeerty</a>
+        </div>
+        </div>
+    </nav>
 
     <section class="Add-property">
-    <div class="property-container">
-        <div class="property-form-box">
-            <h1>Submit Your Property</h1>
-            <p>Fill in the details to list your property</p>
-            <form action="../index.html">
-                <div class="property-input-group">
-                    <label for="property-title">Property Title</label>
-                    <input type="text" id="property-title" name="property-title" placeholder="Enter property title"
-                        required>
-                </div>
-                <div class="property-input-group">
-                    <label for="location">Location</label>
-                    <input type="text" id="location" name="location" placeholder="Enter property location" required>
-                </div>
-                <div class="property-input-group">
-                    <label for="price">Price ($)</label>
-                    <input type="number" id="price" name="price" placeholder="Enter property price" required>
-                </div>
-                <div class="property-input-group">
-                    <label for="property-type">Property Type</label>
-                    <select id="property-type" name="property-type" required>
-                        <option value="" disabled selected>Select property type</option>
-                        <option value="apartment">Apartment</option>
-                        <option value="house">Villa</option>
-                        <option value="land">Studio</option>
-                        <option value="commercial">House</option>
-                        <option value="commercial">Office</option>
-                    </select>
-                </div>
-                <div class="property-input-group">
-                    <label for="description">Description</label>
-                    <textarea id="description" name="description" placeholder="Enter property description" rows="4"
-                        required></textarea>
-                </div>
-                <div class="property-input-group">
-                    <label for="images">Upload Images</label>
-                    <input type="file" name="images"  multiple>
-                </div>
-                <button type="submit" class="property-btn">Submit Property</button>
-            </form>
+        <div class="property-container">
+            <div class="property-form-box">
+                <h1>Submit Your Property</h1>
+                <p>Fill in the details to list your property</p>
+                <form action="../index.html">
+                    <div class="property-input-group">
+                        <label for="property-title">Property Title</label>
+                        <input type="text" id="property-title" name="property-title" placeholder="Enter property title"
+                            required>
+                    </div>
+                    <div class="property-input-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" name="location" placeholder="Enter property location" required>
+                    </div>
+                    <div class="property-input-group">
+                        <label for="price">Price ($)</label>
+                        <input type="number" id="price" name="price" placeholder="Enter property price" required>
+                    </div>
+                    <div class="property-input-group">
+                        <label for="property-type">Property Type</label>
+                        <select id="property-type" name="property-type" required>
+                            <option value="" disabled selected>Select property type</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="house">Villa</option>
+                            <option value="land">Studio</option>
+                            <option value="commercial">House</option>
+                            <option value="commercial">Office</option>
+                        </select>
+                    </div>
+                    <div class="property-input-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" placeholder="Enter property description" rows="4"
+                            required></textarea>
+                    </div>
+                    <div class="property-input-group">
+                        <label for="images">Upload Images</label>
+                        <input type="file" name="images" multiple>
+                    </div>
+                    <button type="submit" class="property-btn">Submit Property</button>
+                </form>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 </body>
 
 </html>

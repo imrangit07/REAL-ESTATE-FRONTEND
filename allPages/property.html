@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KeySpace</title>
+    <title>Property</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,87 +13,65 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
+
 </head>
 
+
 <body>
-    <!-- THIS IS FOR HERO SECTION -->
-    <main class="hero">
 
-        <input type="checkbox" class="check-input" id="click">
+    <section class="apbout">
 
-        <nav class="navbar">
-           <a href="/"> <i class="fa-solid fa-house"> KEYSPACE</i></a>
-            <div class="navbar-right-section">
-                <label for="click" class="navbar-bars">
-                    <i class="fa-solid fa-bars ">
-                    </i></label>
-
-                <ul class="right-all-nav-links">
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="allPages/about.html">ABOUT</a></li>
-                    <li><a href="allPages/apartment.html">PROPERTYS</a></li>
-                    <li><a href="allPages/contact.html">CONTACT</a></li>
-                </ul>
+        <div class="containers">
+            <div class="blure">
 
 
-                <div class="nav-btns right-all-nav-links">
-                    <a href="allPages/signin.html" class="nav-login-btn navbar-btns"><i class="fa-solid fa-user"></i>
-                        Sign in</a>
-                </div>
+                <input type="checkbox" class="check-input" id="click">
 
-                <a href="allPages/submitProperty.html" target="_blank"
-                    class="nav-add-btn navbar-btns right-all-nav-links"><i class="fa-solid fa-copy"></i>
-                    Submit Propeerty</a>
-
-
-            </div>
-            </div>
-
-        </nav>
-
-        <div class="hero-containt">
-            <div class="hero-left-section">
-                <div class="content">
-                    <h1 class="hero-title"><span> KeySpace</span><br> <span>E</span>LEGANT <span>H</span>OME </h1>
-                    <p class="hero-para">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
-                        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                        Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-                        eius?
-                    </p>
-                    <a href="#" class="btn">Read More</a>
-
-                    <div class="circle1"></div>
-                    <div class="circle2"></div>
-                    <div class="circle3"></div>
-
-                    <div class="ellipse1">
-                        <div class="ellipse2">
-                            <div class="ellipse3"></div>
+                <nav class="navbar navall">
+                    <a href="/"> <i class="fa-solid fa-house"> KEYSPACE</i></a>
+                    <div class="navbar-right-section">
+                        <label for="click" class="navbar-bars">
+                            <i class="fa-solid fa-bars ">
+                            </i></label>
+                        <ul>
+                            <li><a href="/">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="property.html">PROPERTYS</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                        <div class="nav-btns">
+                            <a href="signin.html" class="nav-login-btn navbar-btns"><i
+                                    class="fa-solid fa-user"></i>
+                                Sign in</a>
                         </div>
+
+
+                        <a href="submitProperty.html" target="_blank" class="nav-add-btn navbar-btns"><i
+                                class="fa-solid fa-copy"></i>
+                            Submit Propeerty</a>
+
                     </div>
+                </nav>
 
-                </div>
 
 
-            </div>
-            <div class="hero-right-section">
-                <div class="first">
-                    <div class="second">
-                        <div class="image">
-                            <!-- <img src="./images/hero-house-img2.jpg" alt=""> -->
-                            <!-- <img src="https://images.unsplash.com/photo-1730215158912-d0d396174bc5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmlsZGluZ3xlbnwwfDB8MHx8fDA%3D" alt=""> -->
-                        </div>
+                <div class="blure-text">
+                    <h1><span>P</span>ropertys</h1>
+                    <p class="subtext">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam delectus quam quaerat corporis
+                        sequi vero cupiditate aut culpa dolores rem vel odio ea natus, cum, ipsa accusantium ipsam
+                        similique! Vitae!
+                        Molestiae sunt reprehenderit libero quaerat minima ut totam,
+                    </p>
+                    <div class="btn">
+                        <a href="#">Read More</a>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
-
-
-    <!-- THIS IS FOR FEATURED PROPERTIES -->
 
     <section class="featured " id="about">
         <div class="featured-title">
@@ -101,7 +79,7 @@
             <h1>Recommended For You</h1>
             <ul>
                 <li><a href="#" class="btn">View all</a></li>
-                <li><a href="allPages/apartment.html">Apartment</a></li>
+                <li><a href="#">Apartment</a></li>
                 <li><a href="#">Villa</a></li>
                 <li><a href="#">Studio</a></li>
                 <li><a href="#">House </a></li>
@@ -349,234 +327,6 @@
     </section>
 
 
-    <!-- THIS IS FOR CITIES -->
-    <section class="cities">
-        <div class="citie1">
-            <h3>EXPLORE CITIES</h3>
-            <h1>Our Location For You</h1>
-        </div>
-        <div class="citie2 citie">
-            <div class="cities-details">
-                <div class="citie-detail">
-                    <span>321 Property</span>
-                    <h3>Naperville</h3>
-                </div>
-                <div class="citie-arrow-icon">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
-            </div>
-        </div>
-        <div class="citie3 citie">
-            <div class="cities-details">
-                <div class="citie-detail">
-                    <span>321 Property</span>
-                    <h3>Naperville</h3>
-                </div>
-                <div class="citie-arrow-icon">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
-            </div>
-        </div>
-        <div class="citie4 citie">
-            <div class="cities-details">
-                <div class="citie-detail">
-                    <span>321 Property</span>
-                    <h3>Naperville</h3>
-                </div>
-                <div class="citie-arrow-icon">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
-            </div>
-        </div>
-        <div class="ellipsis">
-            <i class="fa-solid fa-ellipsis"></i>
-        </div>
-    </section>
-
-    <!-- THIS IS FOR SERVICES  -->
-
-    <section class="services" id="services">
-        <div class="service1">
-            <h3>OUR SERVICES</h3>
-            <h1>What We Do?</h1>
-        </div>
-        <div class="service2">
-            <div class="services2-img allService">
-
-            </div>
-            <div class="service-details">
-                <h3>By A New Home</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi delectus fugiat molestias dolorum eum
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem, ipsum dolor.</p>
-                <a href="#">Learn More</a>
-            </div>
-        </div>
-        <div class="service3">
-            <div class="services3-img allService">
-
-            </div>
-            <div class="service-details">
-                <h3>Sell A Home</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi delectus fugiat molestias dolorum eum
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem, ipsum dolor.</p>
-                <a href="#">Learn More</a>
-            </div>
-        </div>
-        <div class="service4">
-            <div class="services4-img allService">
-
-            </div>
-            <div class="service-details">
-                <h3>Rent A Home</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi delectus fugiat molestias dolorum eum
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem, ipsum dolor.</p>
-                <a href="#">Learn More</a>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- This is for people comment -->
-
-    <section class="testimonials">
-        <div class="testimonial-title">
-            <h3>SEARCH YOUR DREAM HOME </h3>
-            <h1>What our clients say</h1>
-        </div>
-        <div class="testimonial1 allTestimonial">
-            <div class="testimonial-details">
-                <h3>Amazing home for me</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi delectus fugiat molestias dolorum eum
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem, ipsum dolor. Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Voluptate quam earum ex nisi ad itaque neque sit iure autem
-                    quaerat?</p>
-                <div class="testimonials1-img alltestimonia1">
-
-                </div>
-                <div class="testimonials-client">
-                    <h4>Imran Hussain<span>, Client</span></h4>
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="testimonial1 allTestimonial">
-            <div class="testimonial-details">
-                <h3>Amazing home for me</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi delectus fugiat molestias dolorum eum
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem, ipsum dolor. Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Voluptate quam earum ex nisi ad itaque neque sit iure autem
-                    quaerat?</p>
-                <div class="testimonials2-img alltestimonia1">
-
-                </div>
-                <div class="testimonials-client">
-                    <h4>Shara Den<span>, Client</span></h4>
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="testimonial1 allTestimonial">
-            <div class="testimonial-details">
-                <h3>Amazing home for me</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi delectus fugiat molestias dolorum eum
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem, ipsum dolor. Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Voluptate quam earum ex nisi ad itaque neque sit iure autem
-                    quaerat?</p>
-                <div class="testimonials3-img alltestimonia1">
-
-                </div>
-                <div class="testimonials-client">
-                    <h4>Manish Bhai<span>, Client</span></h4>
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-        </div>
-
-
-
-    </section>
-
-
-    <!-- This is for Agents section-->
-    <section class="agents" id="contact">
-        <div class="agent-title">
-            <h3>OUR TEAMS</h3>
-            <h1>Meet Our Agents</h1>
-        </div>
-        <div class="agents-grid">
-            <div class="agent1 agent">
-                <div class="agent-img">
-
-                </div>
-                <div class="agentDeatil">
-                    <div class="agentName">
-                        <h4>Charis Patt</h4>
-                        <span>Administrative Staff</span>
-                    </div>
-                    <div class="agentInfo">
-                        <i class="fa-solid fa-phone"></i>
-                        <i class="fa-solid fa-message"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="agent2 agent">
-                <div class="agent-img">
-
-                </div>
-                <div class="agentDeatil">
-                    <div class="agentName">
-                        <h4>Charis Patt</h4>
-                        <span>Administrative Staff</span>
-                    </div>
-                    <div class="agentInfo">
-                        <i class="fa-solid fa-phone"></i>
-                        <i class="fa-solid fa-message"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="agent3 agent">
-                <div class="agent-img">
-
-                </div>
-                <div class="agentDeatil">
-                    <div class="agentName">
-                        <h4>Charis Patt</h4>
-                        <span>Administrative Staff</span>
-                    </div>
-                    <div class="agentInfo">
-                        <i class="fa-solid fa-phone"></i>
-                        <i class="fa-solid fa-message"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="agent4 agent">
-                <div class="agent-img">
-
-                </div>
-                <div class="agentDeatil">
-                    <div class="agentName">
-                        <h4>Charis Patt</h4>
-                        <span>Administrative Staff</span>
-                    </div>
-                    <div class="agentInfo">
-                        <i class="fa-solid fa-phone"></i>
-                        <i class="fa-solid fa-message"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="agent-ellipsis">
-            <i class="fa-solid fa-ellipsis"></i>
-        </div>
-    </section>
-
-
     <!-- This is for footer section -->
     <footer class="footer">
         <div class="socialMediaIcon">
@@ -627,4 +377,4 @@
     </footer>
 </body>
 
-</htm
+</html>
