@@ -537,12 +537,14 @@ body {
 }
 
 .featured .featured-title .btn,
-.service-details a {
+.service-details a,.common-featur-btn {
     background: linear-gradient(90deg, #7c01ff, #015dfe);
     color: white;
-    transition: all 5s ease;
+    transition: all .5s ease;
+
 
     &:hover {
+        color: #090611;
         background: linear-gradient(-90deg, #7c01ff, #015dfe);
 
     }
@@ -569,7 +571,7 @@ body {
     text-decoration: none;
     border-radius: 50px;
     background: linear-gradient(90deg, #7c01ff, #015dfe);
-    transition: all .4s ease;
+    transition: all .5s ease;
 
     &:hover {
         color: #090611;
@@ -607,6 +609,15 @@ body {
     }
 
 }
+
+/* this is for common featured */
+.common-img{
+    transition: all 1s ease;
+}
+.common-img:hover{
+    filter: brightness(70%);
+}
+/* this is for common featured */
 
 .featured .all-featured .featured1 .featured-img {
     background-image: url("images/featured1.jpg");
@@ -1192,6 +1203,11 @@ body {
         padding: 2rem 4rem;
     }
 }
+
+
+
+
+
 
 /* This is for footer sections */
 
