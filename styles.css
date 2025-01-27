@@ -1011,11 +1011,6 @@ body {
 
 }
 
-@media screen and (max-width:500px) {
-    .services .service4 .services4-img{
-        scale: 1.1;
-    }
-}
 
 
 
