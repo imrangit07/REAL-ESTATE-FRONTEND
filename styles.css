@@ -1699,26 +1699,32 @@ body {
 
 @keyframes apartments {
     0% {
+      background: radial-gradient(#3a0fa8, #090611,#090611);
         background-image: url("/images/apart1.jpeg");
     }
 
     20% {
+        background: radial-gradient(#3a0fa8,#3a0fa8, #090611,#090611);
         background-image: url("/images/apart2.webp");
     }
 
     40% {
+        background: radial-gradient(#3a0fa8,#3a0fa8, #3a0fa8, #090611,#090611);
         background-image: url("/images/apart3.jpeg");
     }
 
     60% {
+        background: radial-gradient(#3a0fa8,#3a0fa8,#3a0fa8,#3a0fa8, #090611,#090611);
         background-image: url("/images/apart4-4.jpg");
     }
 
     80% {
+        background: radial-gradient(#090611,#090611);
         background-image: url("/images/apart5.jpeg");
     }
 
     100% {
+        background: radial-gradient(#3a0fa8,#3a0fa8, #090611);
         background-image: url("/images/apart6.jpeg");
     }
 }
@@ -1872,12 +1878,10 @@ body {
 
     .container span {
         font-size: 2rem;
-        padding-left: 3rem;
     }
 
     .container h2 {
         font-size: 3rem;
-        padding-left: 3rem;
 
     }
 
@@ -2024,6 +2028,15 @@ body {
         & p {
             font-size: .8rem;
         }
+    }
+}
+@media  screen and (max-width:450px) {
+    .choose-box {
+        padding: 1.5rem 1rem;
+    }
+    
+    .why-choose-us {
+        padding: 0rem 4rem 3rem 4rem;
     }
 }
 
