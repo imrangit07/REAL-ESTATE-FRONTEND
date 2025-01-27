@@ -75,6 +75,7 @@ body {
     border: 1px solid #015efe2d;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+
     background: linear-gradient(180deg, #3a0fa8cc, #090611, #150c2d, #20104d);
 }
 
@@ -724,20 +725,6 @@ body {
     font-weight: 700;
 }
 
-@media screen and (max-width:480px) {
-
-    .featured .featured-title h3,
-    .cities .citie1 h3,
-    .services .service1 h3 {
-        font-size: 1rem;
-    }
-
-    .featured .featured-title h1,
-    .cities .citie1 h1,
-    .services .service1 hh1 {
-        font-size: 1.5rem;
-    }
-}
 
 @media screen and (max-width:1024px) {
     .featured .featured-title {
@@ -760,6 +747,39 @@ body {
 @media screen and (max-width:600px) {
     .featured .all-featured .all-featured-button {
         grid-column-end: 2;
+    }
+}
+@media screen and (max-width:400px) {
+
+    .featured .featured-title h3,
+    .cities .citie1 h3,
+    .services .service1 h3 {
+        font-size: 1rem;
+    }
+
+    .featured .featured-title h1,
+    .cities .citie1 h1,
+    .services .service1 hh1 {
+        font-size: 1.5rem;
+    }
+    .featured .all-featured{
+        padding: 0 2rem;
+    }
+    .featured .all-featured .featur .featured-img{
+        height:30vh;
+    }
+    .featured .all-featured .featured-sub-title {
+
+        & h3{
+
+            font-size: 1rem;
+        }
+        & ul{
+            font-size: .9rem;
+        }
+    }
+    .featured .all-featured .featured-price .f-price {
+        padding: 1rem 0;
     }
 }
 
@@ -796,15 +816,19 @@ body {
 .cities .citie2 {
 
     background-image: url("images/citie__1.avif");
+    background-position:center;
 }
 
 .cities .citie3 {
     background-image: url("images/citie__2.avif");
+    background-position:center;
 
 }
 
 .cities .citie4 {
     background-image: url("images/citie__3.avif");
+    background-position:center;
+
 }
 
 .cities .citie {
@@ -843,6 +867,13 @@ body {
     scale: 1.1;
 }
 
+
+@media screen and (max-width:480px){
+    .cities .citie{
+        height: 60vh;
+    }
+   
+}
 
 
 /* THIS IS FOR SERVICES */
@@ -964,7 +995,16 @@ body {
     .services .allService {
         height: 40vh;
     }
+    .services .service-details {
+        padding:1rem;
+    }
 
+}
+
+@media screen and (max-width:500px) {
+    .services .service4 .services4-img{
+        scale: 1.1;
+    }
 }
 
 
@@ -973,7 +1013,7 @@ body {
 
 .testimonials {
     background-color: #015efe1e;
-    padding: 10px 50px
+    padding:1rem 2rem;
 }
 
 .testimonials .testimonial-title,
@@ -1099,6 +1139,7 @@ body {
 }
 
 
+
 /* <!-- This is for Agents --> */
 
 .agents {
@@ -1200,7 +1241,7 @@ body {
 
 @media screen and (max-width:600px) {
     .agents {
-        padding: 2rem 4rem;
+        padding: 2rem;
     }
 }
 
@@ -1340,6 +1381,12 @@ body {
 
     .footer {
         text-align: center;
+        /* padding: 1rem 2rem; */
+    }
+}
+@media screen and (max-width:400px) {
+    .footer {
+        padding: 1rem 2rem;
     }
 }
 
