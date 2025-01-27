@@ -577,7 +577,6 @@ body {
 
 .featured .all-featured .all-featured-button .btn {
     padding: 10px 30px 10px 40px;
-    /* margin-left: 60px; */
     color: white;
     text-decoration: none;
     border-radius: 50px;
@@ -757,6 +756,10 @@ body {
 @media screen and (max-width:600px) {
     .featured .all-featured .all-featured-button {
         grid-column-end: 2;
+    }
+    .featured .all-featured .all-featured-button a{
+        font-size: .8rem;
+    
     }
 }
 @media screen and (max-width:400px) {
@@ -1694,32 +1697,26 @@ body {
 
 @keyframes apartments {
     0% {
-      background: radial-gradient(#3a0fa8, #090611,#090611);
         background-image: url("/images/apart1.jpeg");
     }
 
     20% {
-        background: radial-gradient(#3a0fa8,#3a0fa8, #090611,#090611);
         background-image: url("/images/apart2.webp");
     }
 
     40% {
-        background: radial-gradient(#3a0fa8,#3a0fa8, #3a0fa8, #090611,#090611);
         background-image: url("/images/apart3.jpeg");
     }
 
     60% {
-        background: radial-gradient(#3a0fa8,#3a0fa8,#3a0fa8,#3a0fa8, #090611,#090611);
         background-image: url("/images/apart4-4.jpg");
     }
 
     80% {
-        background: radial-gradient(#090611,#090611);
         background-image: url("/images/apart5.jpeg");
     }
 
     100% {
-        background: radial-gradient(#3a0fa8,#3a0fa8, #090611);
         background-image: url("/images/apart6.jpeg");
     }
 }
