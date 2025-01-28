@@ -328,7 +328,7 @@ body {
 
 .hero .hero-right-section {
     width: 50%;
-    height: 90vh;
+    height: 600px;
     display: flex;
     position: relative;
     justify-content: center;
