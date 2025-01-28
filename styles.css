@@ -454,6 +454,10 @@ body {
 
 @media screen and (max-width:600px) {
 
+    .hero{
+        height: 650px;
+    }
+
     .hero .hero-right-section .first,
     .second {
         width: 90%;
