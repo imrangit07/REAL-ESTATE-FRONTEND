@@ -15,7 +15,7 @@ body {
 
 .hero {
     width: 100vw;
-    height: 620px;
+    height: 100vh;
     background: linear-gradient(90deg, #090611, #090611, #150c2d, #20104d, #3a0fa8);
     overflow: hidden;
 }
@@ -126,6 +126,10 @@ body {
 
 
 @media screen and (max-width:1024px) {
+
+    .hero {
+        height: 640px;
+    }
 
     .navbar {
         padding: 22px 0px 10px 20px;
