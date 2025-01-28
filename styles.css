@@ -15,7 +15,7 @@ body {
 
 .hero {
     width: 100vw;
-    height: 100vh;
+    height: 620px;
     background: linear-gradient(90deg, #090611, #090611, #150c2d, #20104d, #3a0fa8);
     overflow: hidden;
 }
