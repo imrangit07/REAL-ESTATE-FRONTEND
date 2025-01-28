@@ -781,6 +781,7 @@ body {
     .cities .citie1 h1,
     .services .service1 hh1 {
         font-size: 1.5rem;
+        margin-top: 5px;
     }
 
     .featured .all-featured {
@@ -934,12 +935,12 @@ body {
 }
 
 .services .allService {
-    height: 60vh;
+    height: 40vh;
     cursor: pointer;
     transition: scale .5s ease;
 
     &:hover {
-        scale: 0.9;
+        scale: 1.1;
 
     }
 }
@@ -947,7 +948,7 @@ body {
 .services .service2 .services2-img {
     background-image: url("images/service1-img.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
@@ -955,7 +956,7 @@ body {
 
     background-image: url("images/service2-img.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 
 }
@@ -963,13 +964,13 @@ body {
 .services .service4 .services4-img {
     background-image: url("images/service3-img.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 
 }
 
 .services .service-details {
-    padding: 0px 60px 20px 60px;
+    padding: 0px 3rem 1.5rem 3rem;
     text-align: center;
 }
 
@@ -978,7 +979,7 @@ body {
 }
 
 .services .service-details p {
-    margin: 20px 0;
+    margin: .8rem 0 1rem 0;
 }
 
 .services .service-details a {
@@ -1009,21 +1010,38 @@ body {
     }
 
     .services .allService {
-        height: 80vh;
+        height: 55vh;
     }
 
     .services .service-details {
         padding: 0px 30px 20px 30px;
     }
+    /* .services .service2 .services2-img,.services .service3 .services3-img,.services .service4 .services4-img {
+        scale: .9;
+    } */
+    .services .service-details p {
+        margin: .5rem 0 1rem 0;
+        font-size: .8rem;
+    }
+    .services .service-details h3 {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width:600px) {
     .services .allService {
-        height: 40vh;
+        height: 30vh;
     }
 
     .services .service-details {
-        padding: 1rem;
+        padding:0 1rem 1rem 1rem;
+    }
+    .services .service1 h3{
+        font-size: 1rem;
+    }
+    .services .service1 h1{
+        font-size: 1.5rem;
+        margin-top: 5px;
     }
 
 }
@@ -1158,6 +1176,9 @@ body {
     .testimonials .allTestimonial {
         padding: 1rem;
     }
+    .testimonials .testimonial-title h3, .agents .agent-title h3{
+        margin-bottom: 5px;
+    }
 }
 
 
@@ -1201,6 +1222,13 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
+}
+.agent .agent-img{
+    transition: filter .5s ease;
+}
+
+.agent .agent-img:hover{
+    filter: brightness(80%);
 }
 
 .agents .agents-grid .agent {
@@ -1653,7 +1681,7 @@ body {
 }
 
 .signin-links a {
-    color: #3a0fa8;
+    color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -1698,7 +1726,9 @@ body {
     color: #4d20ff;
     text-align: center;
     font-size: 2.5rem;
+    font-weight: 600;
     display: block;
+    letter-spacing: 2px;
 }
 
 .container h2 {
@@ -1706,6 +1736,7 @@ body {
     font-size: 3rem;
     margin-top: .5rem;
     text-align: center;
+    letter-spacing: 2px;
     color: #150c2d8a;
 }
 
@@ -1738,8 +1769,6 @@ body {
 
 .blure {
     background-color: rgba(0, 0, 0, 0.7);
-
-    letter-spacing: 2px;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -1938,6 +1967,8 @@ body {
     color: #4d20ff;
     text-align: center;
     font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
     display: block;
 }
 
