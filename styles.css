@@ -123,6 +123,7 @@ body {
 .navbar .navbar-bars,
 .check-input {
     display: none;
+    
 }
 
 
@@ -155,8 +156,6 @@ body {
         z-index: 9;
         border-bottom-left-radius: 50px;
         border-top-left-radius: 50px;
-
-
     }
 
     .navbar ul {
@@ -753,10 +752,10 @@ body {
     font-weight: 700;
 }
 
-@media screen and (max-width:2000px) {
+/* @media screen and (max-width:2000px) {
     .featured .all-featured .all-featured-button {
         grid-column-end: 3;
-    }}
+    }} */
 @media screen and (max-width:1025px) {
     .featured .featured-title {
         & ul {
