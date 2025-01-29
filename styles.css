@@ -15,9 +15,16 @@ body {
 
 .hero {
     width: 100vw;
-    height: 100vh;
+    height: 1000px;
     background: linear-gradient(90deg, #090611, #090611, #150c2d, #20104d, #3a0fa8);
     overflow: hidden;
+}
+
+@media screen and (max-width:2500px){
+
+.hero{
+    height: 700px;
+}
 }
 
 .navbar {
@@ -125,11 +132,10 @@ body {
 }
 
 
+
 @media screen and (max-width:1024px) {
 
-    .hero {
-        height: 640px;
-    }
+ 
 
     .navbar {
         padding: 22px 0px 10px 20px;
@@ -332,7 +338,7 @@ body {
 
 .hero .hero-right-section {
     width: 50%;
-    height: 600px;
+    height: 100vh;
     display: flex;
     position: relative;
     justify-content: center;
@@ -383,6 +389,12 @@ body {
         }
     }
 }
+
+@media screen and (max-width:2500px) {
+    .hero .hero-right-section {
+        height: 700px;
+        }
+    }
 
 @media screen and (max-width:1024px) {
     .hero-containt {
@@ -611,6 +623,7 @@ body {
 
 .featured .all-featured .featur .featured-img {
     height: 40vh;
+    min-width: 400px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -636,6 +649,7 @@ body {
 
 .featured .all-featured .featured1 .featured-img {
     background-image: url("images/featured1.jpg");
+    
 }
 
 .featured .all-featured .featured2 .featured-img {
@@ -739,8 +753,11 @@ body {
     font-weight: 700;
 }
 
-
-@media screen and (max-width:1024px) {
+@media screen and (max-width:2000px) {
+    .featured .all-featured .all-featured-button {
+        grid-column-end: 3;
+    }}
+@media screen and (max-width:1025px) {
     .featured .featured-title {
         & ul {
             flex-wrap: wrap;
@@ -753,23 +770,26 @@ body {
     }
 
 
-    .featured .all-featured .all-featured-button {
-        grid-column-end: 3;
+    
+    .featured .all-featured .featur .featured-img {
+        min-width: 400px;
     }
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:1000px) {
     .featured .all-featured .all-featured-button {
         grid-column-end: 2;
-    }
+    }}
+
+@media screen and (max-width:650px) {
 
     .featured .all-featured .all-featured-button a {
-        font-size: .8rem;
+        font-size: 1rem;
 
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
 
     .featured .featured-title h3,
     .cities .citie1 h3,
@@ -806,6 +826,9 @@ body {
 
     .featured .all-featured .featured-price .f-price {
         padding: 1rem 0;
+    }
+    .featured .featured-title h1, .cities .citie1 h1{
+        letter-spacing: 0px;
     }
 }
 
@@ -1043,7 +1066,11 @@ body {
         font-size: 1.5rem;
         margin-top: 5px;
     }
-
+}
+@media screen and (max-width:450px) {
+    .services .service4 .services4-img{
+        scale: 1.3;
+    }
 }
 
 
